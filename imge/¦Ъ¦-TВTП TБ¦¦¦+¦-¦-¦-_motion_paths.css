@@ -1,0 +1,66 @@
+#page1.gwd-play-animation .gwd-motion-path-11wd-anim-x {
+  --gwd-motion-path: {
+    "tangentFollowing":false, "sections":[ {
+      "controlPoints": ["0px", "0px", "104.99px", "-170.27px", "211.02px", "-253.13px", "318.07px", "-251.38px"], "startTimeMs": 0, "endTimeMs": 1000, "easing": "linear"
+    }
+    , {
+      "controlPoints": ["318.07px", "-251.38px", "424.06px", "-249.65px", "531.05px", "-164.95px", "639px", "0px"], "startTimeMs": 1000, "endTimeMs": 2000, "easing": "linear"
+    }
+    ], "positionTol":0.5, "angleTol":1, "optimizationLevel":0
+  }
+  ;
+  animation: 2s linear 0s infinite normal forwards running gwd-motion-path-11wd-keys-x;
+  transform: translate3d(0px, 0px, 0px);
+}
+@keyframes gwd-motion-path-11wd-keys-x {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.3908, 0.2758, 0.7221, 0.6119);
+  }
+  46.25% {
+    transform: translate3d(286.42px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(318.07px, 0px, 0px);
+  }
+  52.5% {
+    transform: translate3d(339.17px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.2806, 0.3854, 0.6132, 0.7202);
+  }
+  100% {
+    transform: translate3d(639px, 0px, 0px);
+  }
+}
+#page1.gwd-play-animation .gwd-motion-path-11wd-anim-y {
+  animation: 2s linear 0s infinite normal forwards running gwd-motion-path-11wd-keys-y;
+  transform: translate3d(0px, 0px, 0px);
+}
+@keyframes gwd-motion-path-11wd-keys-y {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: cubic-bezier(0.3073, 0.3501, 0.6166, 0.7316);
+  }
+  36.25% {
+    transform: translate3d(0px, -222.35px, 0px);
+    animation-timing-function: cubic-bezier(0.1955, 0.3467, 0.5269, 1.0137);
+  }
+  50% {
+    transform: translate3d(0px, -251.38px, 0px);
+    animation-timing-function: cubic-bezier(0.4645, 0.0482, 0.7854, 0.6435);
+  }
+  63.75% {
+    transform: translate3d(0px, -219.68px, 0px);
+    animation-timing-function: cubic-bezier(0.3811, 0.2728, 0.6918, 0.6496);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+[data-gwd-motion-path-node] {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
